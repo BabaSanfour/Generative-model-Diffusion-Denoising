@@ -1,0 +1,3 @@
+# Overview
+
+Diffusion models are a new and recent class of generative models that rely on a forward diffusion process and a backward denoising process. The forward diffusion process adds a little bit of noise at each step, thus making the input image progressively noisier. On the other hand, the aim of the backward process is to denoise at each step, and is supposed to reverse the effect of the forward process. In this setup, only the backward process is parameterized by a learnable model while the forward process converges to something known, like $\mathcal{N}(0, I)$. If the learning is done correctly and the backward process works well enough, it would ideally be able to progressively remove noise from complete noise and lead to a sample from the data distribution.
